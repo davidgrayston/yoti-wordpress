@@ -13,7 +13,7 @@ RUN composer require wp-coding-standards/wpcs
 
 # Install and configure PHPUnit.
 RUN composer require --dev phpunit/phpunit ^7
-COPY ./docker/phpunit.xml .
+COPY ./phpunit.xml .
 
 # Fetch and configure WordPress test tools.
 RUN git clone -b "$WORDPRESS_VERSION" --single-branch --depth 1 https://github.com/WordPress/wordpress-develop.git wordpress-develop \
