@@ -3,6 +3,11 @@
  * PHPUnit bootstrap file
  */
 
+// Start the session before any console output.
+if (!session_id()) {
+    session_start();
+}
+
 $tests_dir = rtrim(getenv('WP_TESTS_DIR'), '/');
 if (!is_dir($tests_dir)) {
     $tests_dir = '/tmp/wordpress-tests-lib';
