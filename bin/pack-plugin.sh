@@ -1,12 +1,9 @@
 #!/bin/bash
 NAME="yoti-wordpress-edge.zip"
-
-SDK_TAG=$1
 BIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BASE_DIR="$BIN_DIR/.."
 
-# Ensure SDK is checked out.
-$BIN_DIR/checkout-sdk.sh $1
+cd ./yoti/ && composer install --no-dev
 
 echo "Packing plugin ..."
 

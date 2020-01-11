@@ -5,8 +5,6 @@ use Yoti\ActivityDetails;
 use Yoti\Entity\Profile;
 use Yoti\Entity\AgeVerification;
 
-require_once __DIR__ . '/sdk/boot.php';
-
 /**
  * Class YotiHelper
  *

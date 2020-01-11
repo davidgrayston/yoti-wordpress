@@ -3,3 +3,4 @@
 svn/
 docker/profiler_output
 docker/.env
+yoti/vendor

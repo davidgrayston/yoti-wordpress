@@ -17,6 +17,7 @@ if (!function_exists('add_action')) {
 
 require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 require_once __DIR__ . '/class.yoti.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 // Register Yoti hooks.
 register_uninstall_hook(__FILE__, array('Yoti', 'yoti_uninstall_hook'));

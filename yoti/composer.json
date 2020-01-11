@@ -1,0 +1,13 @@
+{
+  "name": "yoti/yoti-wordpress",
+  "description": "Yoti WordPress plugin",
+  "require": {
+    "yoti/yoti-php-sdk": "development_v3-dev"
+  },
+  "repositories": [
+    {
+        "type": "vcs",
+        "url":  "git@github.com:getyoti/yoti-php-sdk.git"
+    }
+  ]
+}
