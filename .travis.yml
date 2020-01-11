@@ -25,7 +25,7 @@ matrix:
       env: WP_VERSION=latest
 
 before_install:
-  - ./bin/checkout-sdk.sh
+  - composer install --working-dir ./yoti --no-dev
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   - |
     if [ -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini ]; then

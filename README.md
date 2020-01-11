@@ -97,10 +97,11 @@ The Yoti plugin will be installed alongside WordPress. Activate it and follow ou
 
 #### Fetching the SDK
 
-To fetch the latest SDK and place in `./yoti/sdk` directory:
+To fetch the latest SDK and dependencies:
 
 ```shell
-$ ./bin/checkout-sdk.sh
+$ cd ./yoti
+$ composer install
 ```
 
 #### Running the local working plugin
@@ -108,8 +109,7 @@ $ ./bin/checkout-sdk.sh
 To run the local working copy of the plugin:
 
 ```shell
-$ cd ./docker
-$ docker-compose up wordpress-dev
+$ composer install --working-dir ./yoti --no-dev
 ```
 
 After the command has finished running, go to <https://localhost:7002>

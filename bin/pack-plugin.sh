@@ -3,7 +3,7 @@ NAME="yoti-wordpress-edge.zip"
 BIN_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 BASE_DIR="$BIN_DIR/.."
 
-cd ./yoti/ && composer install --no-dev
+composer install --working-dir ./yoti --no-dev
 
 echo "Packing plugin ..."
 
